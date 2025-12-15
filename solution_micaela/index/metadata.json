@@ -1,0 +1,21 @@
+{
+  "texts": [
+    "## ¿Cómo abrir una cuenta en BANCO HENRY?\n\nPara abrir una cuenta en BANCO HENRY, sigue estos pasos:\n1. Visita la página web de BANCO HENRY y haz clic en \"Abrir Cuenta\".\n2. Elige el tipo de cuenta que deseas abrir (Cuenta de Ahorros, Cuenta Corriente, etc.).\n3. Completa el formulario en línea con tus datos personales, incluyendo nombre completo, dirección y número de identificación.\n4. Verifica tu identidad subiendo una copia de tu documento de identidad oficial.\n5. Lee y acepta los términos y condiciones.\n6. Realiza el depósito inicial requerido a través de transferencia bancaria o utilizando tu tarjeta de débito o crédito.\n7. Una vez que tu cuenta haya sido verificada y activada, recibirás un correo electrónico de confirmación.",
+    "## ¿Cómo solicitar una tarjeta de crédito en BANCO HENRY?\n\nPara solicitar una tarjeta de crédito en BANCO HENRY, debes:\n1. Iniciar sesión en tu banca en línea de BANCO HENRY.\n2. Navegar a la sección \"Productos\" y seleccionar \"Tarjetas de Crédito\".\n3. Elegir la tarjeta de crédito que mejor se adapte a tus necesidades y hacer clic en \"Solicitar\".\n4. Completar el formulario de solicitud con la información financiera requerida.\n5. Esperar la aprobación de tu solicitud, que se te notificará por correo electrónico.\n6. Una vez aprobada, tu tarjeta de crédito será enviada a tu dirección registrada.",
+    "## ¿Cómo abrir una cuenta en BANCO HENRY?\n\nPara abrir una cuenta en BANCO HENRY, sigue estos pasos:\n1. Visita la página web de BANCO HENRY y haz clic en \"Abrir Cuenta\".\n2. Elige el tipo de cuenta que deseas abrir (Cuenta de Ahorros, Cuenta Corriente, etc.).\n3. Completa el formulario en línea con tus datos personales, incluyendo nombre completo, dirección y número de identificación.\n4. Verifica tu identidad subiendo una copia de tu documento de identidad oficial.\n5. Lee y acepta los términos y condiciones.\n6. Realiza el depósito inicial requerido a través de transferencia bancaria o utilizando tu tarjeta de débito o crédito.\n7. Una vez que tu cuenta haya sido verificada y activada, recibirás un correo electrónico de confirmación."
+  ],
+  "metadatas": [
+    {
+      "source": "nueva_cuenta.txt",
+      "chunk": 0
+    },
+    {
+      "source": "tarjeta_credito.txt",
+      "chunk": 0
+    },
+    {
+      "source": "transferencia.txt",
+      "chunk": 0
+    }
+  ]
+}
