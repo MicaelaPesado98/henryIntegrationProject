@@ -32,10 +32,6 @@ Ejemplos de preguntas que detecta automáticamente:
 - "¿Cuál es el balance de V-12345678?"  → búsqueda en `data/saldos.csv`.
 - "¿Cómo abro una cuenta?" → recuperación desde `knowledge_base`.
 
-Notas y siguientes pasos:
-- Para respuestas generadas por LLM: configurar `OPENAI_API_KEY` y modificar `query_agent.py` para usar `langchain` + `OpenAI` u otro modelo.
-- El indexado aquí es sencillo; en producción se recomienda manejo de chunks, control de metadatos y persistencia más robusta.
-
 **Especificaciones Técnicas**
 - **Lenguaje**: Python 3.9+ (se probó en el venv del proyecto).
 - **Dependencias clave**: listado en `solution_micaela/requirements.txt` (ej.: `faiss-cpu`, `scikit-learn`, `joblib`, `pandas`, `sentence-transformers` — algunas se mantienen por compatibilidad).
@@ -79,4 +75,5 @@ C:/Users/lpesa/Documents/micaela/HW-iacopilot/.venv/Scripts/python.exe "HW - Lan
 **Limitaciones y notas**
 - La calidad del retrieval depende de la calidad y diversidad de la KB; actualmente `transferencia.txt` y `nueva_cuenta.txt` contienen textos muy similares — esto afecta ranking.
 - TF-IDF no captura relaciones semánticas profundas; para consultas abiertas o lenguaje más variado, se recomienda embeddings semánticos + re-ranking.
+
 
