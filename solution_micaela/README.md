@@ -1,4 +1,4 @@
-# Solución de ejemplo: Indexado y agente de consulta
+# Solución: Indexado y agente de consulta
 
 Este ejemplo muestra cómo indexar una base de conocimientos con `sentence-transformers/all-MiniLM-L6-v2` y FAISS, además de un agente CLI simple que enruta consultas a: 1) búsqueda de balances por ID en `data/saldos.csv`, 2) recuperación de documentos de la `knowledge_base/`, y 3) respuestas generales (requieren LLM configurado).
 
@@ -31,7 +31,6 @@ python "HW - LangChain II\solution_micaela\query_agent.py"
 Ejemplos de preguntas que detecta automáticamente:
 - "¿Cuál es el balance de V-12345678?"  → búsqueda en `data/saldos.csv`.
 - "¿Cómo abro una cuenta?" → recuperación desde `knowledge_base`.
-- Preguntas generales → mensaje indicando configurar LLM (OpenAI) para respuestas generadas.
 
 Notas y siguientes pasos:
 - Para respuestas generadas por LLM: configurar `OPENAI_API_KEY` y modificar `query_agent.py` para usar `langchain` + `OpenAI` u otro modelo.
@@ -61,13 +60,6 @@ Notas y siguientes pasos:
 - **Chunking con solapamiento**: mejora la recuperación de respuestas que atraviesan límites de párrafos; reduce pérdida de contexto.
 - **Persistencia del vectorizer**: `vectorizer.joblib` permite que la etapa de consulta reproduzca exactamente la transformación usada en indexación.
 
-**Cómo migrar a embeddings semánticos (opcional)**
-- Si quieres mayor calidad semántica, puedo cambiar la generación de embeddings a `sentence-transformers/all-MiniLM-L6-v2`:
-	1. Resolver dependencias: instalar versiones compatibles de `huggingface-hub` y `transformers` (puede requerir actualizar o forzar versiones en el venv).
-	2. Reemplazar TF-IDF por `SentenceTransformer(...).encode(...)` en `build_index.py` y `retrieve_docs`.
-	3. Regenerar índice.
-- Alternativa segura: descargar el modelo localmente y cargar desde disco para minimizar llamadas al Hub.
-
 **Comandos reproducibles (PowerShell)**
 - Crear venv e instalar dependencias:
 ```
@@ -87,4 +79,4 @@ C:/Users/lpesa/Documents/micaela/HW-iacopilot/.venv/Scripts/python.exe "HW - Lan
 **Limitaciones y notas**
 - La calidad del retrieval depende de la calidad y diversidad de la KB; actualmente `transferencia.txt` y `nueva_cuenta.txt` contienen textos muy similares — esto afecta ranking.
 - TF-IDF no captura relaciones semánticas profundas; para consultas abiertas o lenguaje más variado, se recomienda embeddings semánticos + re-ranking.
-- Si deseas, puedo automatizar la integración con `OpenAI` (LangChain) para sintetizar las respuestas recuperadas en lenguaje natural. Necesitaré `OPENAI_API_KEY` para pruebas.
+
