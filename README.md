@@ -1,0 +1,1 @@
+Para este proyecto final cree dos soluciones. En langChain_grok se enceuntra la solución más completa que integra groq como llm. Quise dejar ambas soluciones ya que una es reultado de iterar la anterior. 
